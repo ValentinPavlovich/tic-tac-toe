@@ -1,8 +1,6 @@
 var boardSize = prompt('Размер игрового поля (3-8):', 3); // Размер игрового поля
 
-if (!parseInt(boardSize)) {
-  alert( "Введите число от 3 до 8!" );
-} else if (boardSize < 3) {
+if (!parseInt(boardSize) || boardSize < 3) {
   boardSize = 3;
 } else if (boardSize > 8) {
   boardSize = 8;
